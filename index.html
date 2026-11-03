@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enter the Signal Room: an interactive-feeling cybersecurity field guide built with pure HTML and CSS.">
+  <meta name="theme-color" content="#07090e">
+  <title>SIGNAL ROOM — project 2 Cybersecurity Field Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Signal Room home"><span class="brand-glyph">S<span>/</span></span><span>SIGNAL<span class="brand-light">ROOM</span></span></a>
+      <input type="checkbox" id="nav-switch" class="nav-switch" aria-label="Toggle navigation">
+      <label for="nav-switch" class="nav-burger"><span></span><span></span></label>
+      <div class="nav-menu">
+        <a href="#tools">TOOL INDEX</a>
+        <a href="#mission">THE MISSION</a>
+        <a href="#protocol">PROTOCOLS</a>
+        <a href="#learn">TRAINING</a>
+        <a class="nav-cta" href="#contact">GET IN THE LOOP <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-orb orb-a" aria-hidden="true"></div>
+      <div class="hero-orb orb-b" aria-hidden="true"></div>
+      <div class="wrap hero-layout">
+        <div class="hero-text">
+          <div class="micro-label"><span class="live-dot"></span> FIELD GUIDE / VOL. 001 <span class="micro-divider">—</span> CYBER DEFENSE</div>
+          <h1>THE INTERNET<br>IS A <span class="outline-word">WILD</span><br><span class="signal-word">PLACE<span class="blink">_</span></span></h1>
+          <p class="hero-description">Less noise. More signal. A hands-on field guide to the tools, tactics, and tiny habits that make your digital world harder to compromise.</p>
+          <div class="hero-buttons">
+            <a href="#tools" class="btn btn-acid">ENTER THE TOOL INDEX <span>↘</span></a>
+            <a href="#mission" class="text-button"><span class="play">▶</span> WHAT IS THIS PLACE?</a>
+          </div>
+          <div class="hero-footnote"><span class="tiny-cross">✳</span> MADE FOR THE CURIOUS. BUILT AROUND ETHICS.</div>
+        </div>
+
+        <div class="hero-console" aria-label="Decorative cybersecurity status console">
+          <div class="console-top"><span><i></i><i></i><i></i> SIGNAL_MONITOR.exe</span><span class="console-index">SR—001</span></div>
+          <div class="console-scene">
+            <div class="radar-ring ring-one"></div><div class="radar-ring ring-two"></div><div class="radar-ring ring-three"></div>
+            <div class="radar-sweep"></div>
+            <div class="radar-center"><span class="center-core"></span><span class="crosshair cross-h"></span><span class="crosshair cross-v"></span></div>
+            <span class="radar-point point-one"></span><span class="radar-point point-two"></span><span class="radar-point point-three"></span>
+            <span class="coord coord-one">51°30'26.4"N</span><span class="coord coord-two">SIGNAL FOUND</span><span class="coord coord-three">ENCRYPTED / 04</span>
+            <svg class="radar-svg" viewBox="0 0 360 360" aria-hidden="true"><path d="M180 180 L270 92 M180 180 L90 250 M180 180 L235 285" stroke="#d6ff45" stroke-width="1" stroke-dasharray="3 7" fill="none" opacity=".55"/><circle cx="270" cy="92" r="4" fill="#d6ff45"/><circle cx="90" cy="250" r="3" fill="#54e7e0"/><circle cx="235" cy="285" r="3" fill="#b6a2ff"/></svg>
+          </div>
+          <div class="console-data">
+            <div><span class="data-label">SYSTEM STATUS</span><strong><i class="live-dot"></i> WATCHING</strong></div>
+            <div><span class="data-label">THREAT MODEL</span><strong class="data-value">AWARENESS</strong></div>
+            <div><span class="data-label">YOUR NEXT MOVE</span><strong class="data-acid">LEARN →</strong></div>
+          </div>
+          <div class="console-bottom"><span>NO SYSTEM IS INVINCIBLE.</span><span>STAY SHARP <b>✳</b></span></div>
+          <span class="console-corner corner-tl"></span><span class="console-corner corner-br"></span>
+        </div>
+      </div>
+      <div class="wrap hero-marquee" aria-label="Topics covered"><div class="marquee-track"><span>THINK LIKE A DEFENDER <b>✳</b> LEARN THE TOOLS <b>✳</b> QUESTION THE SIGNAL <b>✳</b> PROTECT YOUR DATA <b>✳</b> THINK LIKE A DEFENDER <b>✳</b> LEARN THE TOOLS <b>✳</b> QUESTION THE SIGNAL <b>✳</b> PROTECT YOUR DATA <b>✳</b></span></div></div>
+    </section>
+
+    <section class="ticker-strip">
+      <div class="wrap ticker-inner"><span class="ticker-label">CURRENT DIRECTIVE</span><p>Curiosity is good. <span>Authorization is mandatory.</span></p><a href="#mission">READ THE RULES <b>↗</b></a></div>
+    </section>
+
+    <section class="tool-index section" id="tools">
+      <div class="wrap">
+        <div class="section-topline"><span>01 / THE TOOL INDEX</span><span>SELECT A LEAD <b>↘</b></span></div>
+        <div class="section-title-row"><h2>YOUR NEW<br><span>FAVORITE TOOLS.</span></h2><p>Not a giant directory of random links. Just a short list of tools worth understanding—and what they're actually good for.</p></div>
+        <div class="tool-wall">
+          <a class="tool-tile tile-featured" href="https://www.wireshark.org/" target="_blank" rel="noopener noreferrer">
+            <div class="tile-no">TOOL_001 / TRAFFIC</div><div class="tile-art packet-art"><span class="packet p1"></span><span class="packet p2"></span><span class="packet p3"></span><span class="packet p4"></span><span class="packet p5"></span><span class="packet p6"></span><span class="packet p7"></span><span class="packet p8"></span><span class="packet p9"></span><span class="packet p10"></span><span class="packet p11"></span><span class="packet p12"></span><span class="packet p13"></span><span class="packet p14"></span><span class="packet p15"></span><span class="packet p16"></span><span class="packet p17"></span><span class="packet p18"></span><span class="packet p19"></span><span class="packet p20"></span><span class="packet p21"></span><span class="packet p22"></span><span class="packet p23"></span><span class="packet p24"></span><span class="packet p25"></span><span class="packet p26"></span><span class="packet p27"></span><span class="packet p28"></span><span class="packet p29"></span><span class="packet p30"></span><span class="packet p31"></span><span class="packet p32"></span><span class="packet p33"></span><span class="packet p34"></span><span class="packet p35"></span><span class="packet p36"></span><span class="packet p37"></span><span class="packet p38"></span><span class="packet p39"></span><span class="packet p40"></span><span class="packet p41"></span><span class="packet p42"></span><span class="packet p43"></span><span class="packet p44"></span><span class="packet p45"></span><span class="packet p46"></span><span class="packet p47"></span><span class="packet p48"></span><span class="packet p49"></span><span class="packet p50"></span><span class="packet p51"></span><span class="packet p52"></span><span class="packet p53"></span><span class="packet p54"></span><span class="packet p55"></span><span class="packet p56"></span><span class="packet p57"></span><span class="packet p58"></span><span class="packet p59"></span><span class="packet p60"></span></div>
+            <div class="tile-content"><div class="tile-heading"><h3>Wireshark</h3><span class="tile-arrow">↗</span></div><p>See what travels across a network. Learn packet analysis and turn raw traffic into something understandable.</p><div class="tile-tags"><span>PACKETS</span><span>NETWORKS</span></div></div>
+          </a>
+          <a class="tool-tile tile-nmap" href="https://nmap.org/" target="_blank" rel="noopener noreferrer">
+            <div class="tile-no">TOOL_002 / DISCOVERY</div><div class="nmap-visual"><div class="node node-a"></div><div class="node node-b"></div><div class="node node-c"></div><div class="node node-d"></div><div class="node node-e"></div><div class="node node-f"></div><svg viewBox="0 0 300 150" aria-hidden="true"><path d="M35 90 90 36 150 80 220 28 270 100 150 125 35 90 M90 36 270 100 M150 80 150 125 M220 28 150 80" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="4 6"/></svg></div>
+            <div class="tile-content"><div class="tile-heading"><h3>Nmap</h3><span class="tile-arrow">↗</span></div><p>Discover hosts and services on systems you own or have permission to assess.</p><div class="tile-tags"><span>DISCOVERY</span><span>ASSETS</span></div></div>
+          </a>
+          <a class="tool-tile tile-zap" href="https://www.zaproxy.org/" target="_blank" rel="noopener noreferrer">
+            <div class="tile-no">TOOL_003 / WEB</div><div class="zap-visual"><span class="zap-orbit"></span><span class="zap-core">Z</span><span class="zap-cross">+</span></div>
+            <div class="tile-content"><div class="tile-heading"><h3>OWASP ZAP</h3><span class="tile-arrow">↗</span></div><p>Explore web application testing with an open-source tool and a safe practice target.</p><div class="tile-tags"><span>WEB APPS</span><span>TESTING</span></div></div>
+          </a>
+          <a class="tool-tile tile-owasp" href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">
+            <div class="tile-no">TOOL_004 / KNOWLEDGE</div><div class="owasp-visual"><span>O</span><span>W</span><span>A</span><span>S</span><span>P</span><i>TOP 10</i></div>
+            <div class="tile-content"><div class="tile-heading"><h3>OWASP Top 10</h3><span class="tile-arrow">↗</span></div><p>Get to know common web application risks and the principles that help reduce them.</p><div class="tile-tags"><span>RISKS</span><span>DEFENSE</span></div></div>
+          </a>
+        </div>
+        <p class="small-note"><span>✳</span> Every tool here has a job. None of them grants permission to test someone else's system.</p>
+      </div>
+    </section>
+
+    <section class="mission-section section" id="mission">
+      <div class="wrap mission-layout">
+        <div class="mission-left"><div class="section-topline"><span>02 / THE MISSION</span><span>ETHICS IS NOT OPTIONAL</span></div><h2>BREAK THE<br><span>BAD HABITS.</span></h2><p class="mission-intro">Ethical hacking is not a vibe or a cool hoodie. It's a discipline built on consent, scope, evidence, and responsible disclosure.</p><a class="arrow-link" href="https://owasp.org/www-project-web-security-testing-guide/" target="_blank" rel="noopener noreferrer">OPEN THE TESTING GUIDE <span>↗</span></a><div class="mission-stamp">AUTHORIZED<br>ONLY <b>✳</b></div></div>
+        <div class="mission-steps">
+          <article class="mission-step"><span class="step-num">01</span><div><span class="step-tag">BEFORE YOU TEST</span><h3>Get permission.</h3><p>Define the target, allowed methods, timing, and boundaries with the system owner.</p></div><span class="step-symbol">↗</span></article>
+          <article class="mission-step"><span class="step-num">02</span><div><span class="step-tag">WHILE YOU TEST</span><h3>Keep it controlled.</h3><p>Use lab environments when learning. Avoid unnecessary access, disruption, or data collection.</p></div><span class="step-symbol">↗</span></article>
+          <article class="mission-step"><span class="step-num">03</span><div><span class="step-tag">AFTER YOU TEST</span><h3>Report, don't brag.</h3><p>Share clear evidence privately with the owner and give them a responsible path to remediation.</p></div><span class="step-symbol">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="protocol-section section" id="protocol">
+      <div class="wrap">
+        <div class="section-topline"><span>03 / PERSONAL PROTOCOLS</span><span>THE BORING STUFF WORKS</span></div>
+        <div class="protocol-heading"><h2>MAKE YOURSELF<br><span>A HARDER TARGET.</span></h2><p>No magic button. Just a few defenses that quietly do a lot of work.</p></div>
+        <div class="protocol-grid">
+          <article class="protocol-card"><span class="protocol-index">P—01</span><div class="protocol-symbol symbol-lock">⌑</div><h3>Lock down access.</h3><p>Use unique, long passwords, a reputable password manager, and multifactor authentication.</p><div class="protocol-bottom"><span>ACCOUNT SECURITY</span><span>↗</span></div></article>
+          <article class="protocol-card"><span class="protocol-index">P—02</span><div class="protocol-symbol symbol-update">⟳</div><h3>Patch the gaps.</h3><p>Keep your operating system, browser, apps, and router firmware updated.</p><div class="protocol-bottom"><span>DEVICE HYGIENE</span><span>↗</span></div></article>
+          <article class="protocol-card"><span class="protocol-index">P—03</span><div class="protocol-symbol symbol-eye">◉</div><h3>Question the message.</h3><p>Slow down around urgent requests. Verify links, sender identities, and unexpected files.</p><div class="protocol-bottom"><span>PHISHING AWARENESS</span><span>↗</span></div></article>
+          <article class="protocol-card"><span class="protocol-index">P—04</span><div class="protocol-symbol symbol-backup">▤</div><h3>Plan for recovery.</h3><p>Keep protected backups and know how you would restore important files if something goes wrong.</p><div class="protocol-bottom"><span>RESILIENCE</span><span>↗</span></div></article>
+        </div>
+        <div class="protocol-footer"><span class="protocol-live"></span><span>FIELD NOTE: Small habits beat a security setup you never maintain.</span><a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">CISA CHECKLIST ↗</a></div>
+      </div>
+    </section>
+
+    <section class="learn-section section" id="learn">
+      <div class="wrap">
+        <div class="section-topline"><span>04 / LEVEL UP</span><span>TRAINING GROUNDS</span></div>
+        <div class="section-title-row"><h2>FROM ZERO<br>TO <span>SECURITY-MINDED.</span></h2><p>Follow the sequence. Learn the fundamentals, practice in safe labs, then build the judgment that tools can't give you.</p></div>
+        <div class="learning-track">
+          <a href="https://www.netacad.com/" target="_blank" rel="noopener noreferrer" class="track-stop"><span class="track-number">01</span><div class="track-body"><span class="track-tag">FIRST, THE BASICS</span><h3>Networking &amp; systems</h3><p>Understand IP addresses, DNS, ports, operating systems, and permissions.</p><span class="track-link">CISCO NETWORKING ACADEMY ↗</span></div><span class="track-marker"></span></a>
+          <a href="https://tryhackme.com/" target="_blank" rel="noopener noreferrer" class="track-stop"><span class="track-number">02</span><div class="track-body"><span class="track-tag">THEN, PRACTICE</span><h3>Guided security labs</h3><p>Build confidence in structured, legal environments designed for learners.</p><span class="track-link">TRYHACKME ↗</span></div><span class="track-marker"></span></a>
+          <a href="https://portswigger.net/web-security" target="_blank" rel="noopener noreferrer" class="track-stop"><span class="track-number">03</span><div class="track-body"><span class="track-tag">GO DEEPER</span><h3>Web application security</h3><p>Explore vulnerability concepts with lessons and purpose-built practice labs.</p><span class="track-link">PORTSWIGGER ACADEMY ↗</span></div><span class="track-marker"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-section" id="contact">
+      <div class="signal-grid-bg" aria-hidden="true"></div>
+      <div class="wrap signal-content"><span class="signal-eyebrow"><span class="live-dot"></span> END OF TRANSMISSION? NOT EVEN CLOSE.</span><h2>STAY CURIOUS.<br><span>STAY DIFFICULT TO HACK.</span></h2><p>Pick a tool. Read the docs. Practice in a lab. Repeat until security becomes a habit—not just a tab you left open.</p><div class="signal-actions"><a href="#tools" class="btn btn-acid">BACK TO THE TOOL INDEX ↗</a><a href="https://www.eff.org/issues/privacy" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">EXPLORE DIGITAL PRIVACY ↗</a></div><div class="big-signal" aria-hidden="true">S/</div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-top"><a class="brand" href="#home"><span class="brand-glyph">S<span>/</span></span><span>SIGNAL<span class="brand-light">ROOM</span></span></a><p>AN INDEPENDENT CYBERSECURITY FIELD GUIDE.<br>LEARN LOUD. TEST LEGALLY. DEFEND BETTER.</p><a href="#home" class="back-top">RETURN TO TOP ↑</a></div>
+    <div class="wrap footer-bottom"><span>© 2026 SIGNAL ROOM / EDUCATIONAL PROJECT</span><span>HTML + CSS / NO JS REQUIRED</span><span>USE YOUR POWERS RESPONSIBLY ✳</span></div>
+  </footer>
+</body>
+</html>
